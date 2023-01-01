@@ -1,0 +1,222 @@
+body {
+    margin: 0px;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: rgb(87, 87, 87);
+}
+.nav-links {
+    display: flex;
+    font-size: max(1vw, 14,5px);
+    margin: 0px;
+    align-items: center;
+}
+#Recipes:hover, #FAQ:hover, #about:hover, #contact:hover {
+    transition: 0.5s;
+    transform: scale(1.10);
+}
+#Recipes, #FAQ, #about, #contact {
+    position: relative;
+    padding: 0 15px;
+}
+a:hover {
+    text-shadow: 0 0 5px rgb(217, 217, 217), 0 0 12px rgb(217, 217, 217), 0 0 20px rgb(217, 217, 217);
+    color: white;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+}
+.header-logo {
+    height: auto;
+    width: 30px;
+    transform: scaleX(-1);
+    display: flex;
+    flex: 0 1 auto;;
+    margin: 7px 0 7px 45px;
+    flex-direction: row;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(186, 186, 186);
+    margin: 0px;
+    border-bottom: solid 1px rgb(47, 47, 47);
+    position: fixed;
+    width: 100%;
+}
+
+.cuisine {
+    display: flex;
+    align-items: center;
+    border-bottom: solid black;
+    padding: 150px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, 
+    url(images/cuisine.jpg) no-repeat center center fixed;
+    background-size: cover; 
+    color: #f9faf8;
+    text-shadow:0px 0px 5px black,
+    0px 0px 20px black,
+    0px 0px 40px white; 
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 550px;
+}
+.website-description {
+    display: flex;
+    max-width: 600px;
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    display: inline;
+    text-align: justify;
+    justify-content: center;
+}
+.textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hometitle {
+    font-size: 40px;
+    margin-bottom: 0px;
+    text-align: right;
+    margin-left: auto;
+    justify-content: center;
+}
+
+#discover-button {
+    color: white;
+    text-shadow:0px 0px 5px black,
+    0px 0px 20px black,
+    0px 0px 40px white; 
+    border: 2px solid rgb(104, 104, 104);
+    border-radius: 2em;
+    width: 12em;
+    height: 3em;
+    font-size: 1.2em;
+    text-decoration: none;
+    background: linear-gradient(rgba(101, 0, 0, 0.7), rgba(66, 0, 0, 0.7));
+    transition: 0.3s;
+    display: block;
+    margin-left: auto;
+    justify-content: center;
+}
+#discover-button:hover {
+    transform: translateY(-3%);
+    background: linear-gradient(rgba(180, 1, 1, 0.7), rgba(161, 0, 0, 0.7));
+    box-shadow: 0 0 7.5px white;}
+
+.Chefname, .Chefdescription {
+    opacity: 0;
+    position: absolute;
+    max-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-shadow:0px 0px 5px black,
+    0px 0px 20px black,
+    0px 0px 40px white; 
+    transition: 1s;
+    animation: fadeIn;
+    font-size: max(20px, 0,1vw);
+    margin: 15px;
+    width: min(300px, 50vw);
+}
+.Chefname {
+    margin-bottom: 23vh;
+}
+.thechef {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;   
+}
+#Chefabdul {
+    border-radius: 600px;
+    box-shadow: 0 0 2vw rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    color:#ffffff;
+    width: min(300px, 50vw);
+    height: auto;
+}
+.thechef:hover > .Chefname, .thechef:hover >.Chefdescription {
+    opacity: 100;
+}
+.thechef:hover > #Chefabdul {
+    transition: 0.5s;
+    filter: brightness(50%);
+    transform: scale(1.05);
+}
+.recipestitle {
+    display: flex;
+    background-color:rgb(42, 42, 42);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+.recipes {
+    display: flex;
+    align-items: center;
+    border-bottom: solid black rgb(47, 47, 47);
+    padding: 20px 100px 80px 100px;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: rgb(42, 42, 42);
+    background-size: cover; 
+    color: #f9faf8;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.recipename, .recipename2, .recipename3, .recipename4 {
+    font-size: 23px;
+}
+.recipedescription, .recipedescription2, .recipedescription3, .recipedescription4 {
+    max-width: 350px;
+}
+#specialpudding, #Eggsandwich, #Something, #Sardines {
+    width: 275px; 
+    height: 275px; 
+    overflow: hidden;
+    border-radius: 2em;
+    box-shadow: 0 0 2vw rgb(0, 0, 0);
+    margin-bottom: 15px;
+}
+#specialpudding:hover, #Eggsandwich:hover, #Something:hover, #Sardines:hover{
+    transition: 0.75s;
+    transform: scale(1.05);
+}
+.quote {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
+    align-items: center;
+    font-size: 25px;
+    background-color: #e5e7eb;
+}
+#quote {
+    margin-bottom: 5px;
+    max-width: 1000px
+}
+#quote2 {
+    width: 100%;
+    max-width: 1000px;
+    text-align: right;
+}
+.footer {
+    background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 13px;
+}
+.copyright {
+    margin-bottom: 0px;
+}
